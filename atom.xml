@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kelu007.github.io</id>
-    <title>kelu&apos;s blog</title>
-    <updated>2020-10-22T14:22:39.471Z</updated>
+    <title>Qilin Wang</title>
+    <updated>2020-10-23T03:27:52.698Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kelu007.github.io"/>
     <link rel="self" href="https://kelu007.github.io/atom.xml"/>
-    <subtitle>一枚热爱生活的程序员</subtitle>
+    <subtitle>Computer Science&lt;br&gt;
+Wuhan University</subtitle>
     <logo>https://kelu007.github.io/images/avatar.png</logo>
     <icon>https://kelu007.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, kelu&apos;s blog</rights>
+    <rights>All rights reserved 2020, Qilin Wang</rights>
     <entry>
         <title type="html"><![CDATA[How to read papers?]]></title>
         <id>https://kelu007.github.io/post/how-to-read-papers/</id>
