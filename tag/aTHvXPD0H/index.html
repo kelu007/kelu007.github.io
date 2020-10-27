@@ -19,7 +19,7 @@ Wuhan University" />
  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   </head>
   <body>
-    <div class="main px-4 flex flex-col lg:flex-row">
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
       <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
   <div class="lg:sticky top-0">
     <div class="sidebar-content">
@@ -110,9 +110,8 @@ Wuhan University
 <div class="mask" onclick="closeMenu()">
 </div>
       <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="latest-article text-lg text-gray-700 mb-8">
-          <i class="ri-article-line"></i>
-          最新文章
+        <h2 class="text-lg text-gray-700 mb-8">
+          <i class="ri-bookmark-line"></i> 算法
         </h2>
         
   <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${0 * 0.2}s` }">
@@ -151,70 +150,11 @@ Wuhan University
     </div>
   </section>
 
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${2 * 0.2}s` }">
-    
-      <a href="https://kelu007.github.io/post/how-to-read-papers/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://kelu007.github.io/post-images/how-to-read-papers.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://kelu007.github.io/post/how-to-read-papers/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">How to read papers?</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-10-22 21:10 / 3 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${3 * 0.2}s` }">
-    
-      <a href="https://kelu007.github.io/post/career-advices-in-ml/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://kelu007.github.io/post-images/career-advices-in-ml.jpg'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://kelu007.github.io/post/career-advices-in-ml/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">Career advices in ML</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-10-22 21:10 / 1 min read</div>
-    </div>
-  </section>
-
-  <section class="post-item md:flex pb-12 animated fadeIn" :style="{ 'animation-delay': `${4 * 0.2}s` }">
-    
-      <a href="https://kelu007.github.io/post/about/" class="feature-image-wrapper bg-gray-100 rounded-lg flex-shrink-0 mr-8 w-full h-56 h-32 md:w-56 md:h-40">
-        <div class="post-feature-image lazy w-full h-56 h-32 md:w-56 md:h-40" data-bg="'https://kelu007.github.io/post-images/about.png'">
-        </div>
-      </a>
-    
-    <div class="content">
-      <a href="https://kelu007.github.io/post/about/">
-        <h2 class="post-title text-xl font-extrabold mt-5 md:mt-0">关于</h2>
-      </a>
-      <div class="post-abstract text-gray-700 font-light my-4">
-        
-      </div>
-      <div class="text-gray-400 text-sm font-light">2020-10-19 16:10 / 1 min read</div>
-    </div>
-  </section>
-
-        <div class="read-more">
-          
-        </div>
-        <div class="index-page">
-          <div class="pagination-container animated fadeIn">
+        <div class="pagination-container animated fadeIn">
   
   
 </div>
 
-        </div>
       </div>
     </div>
 

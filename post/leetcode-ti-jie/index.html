@@ -1,0 +1,2076 @@
+<html>
+  <head>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Qilin Wang</title>
+<meta name="description" content="Computer Science<br>
+Wuhan University" />
+<link rel="shortcut icon" href="https://kelu007.github.io/favicon.ico?v=1603805673810">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://kelu007.github.io/styles/main.css">
+
+
+
+<!-- Valine评论功能 -->
+ <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://kelu007.github.io">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://kelu007.github.io/images/avatar.png?v=1603805673810" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Qilin Wang</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#4-%E5%AF%BB%E6%89%BE%E4%B8%A4%E4%B8%AA%E6%AD%A3%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0-hard">4. 寻找两个正序数组的中位数 Hard</a></li>
+<li><a href="#53-%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C-easy">53. 最大子序和 Easy</a></li>
+<li><a href="#169-%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0-easy">169. 多数元素 Easy</a></li>
+<li><a href="#215-%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E7%AC%ACk%E4%B8%AA%E6%9C%80%E5%A4%A7%E5%85%83%E7%B4%A0-medium">215. 数组中的第K个最大元素 Medium</a></li>
+<li><a href="#240-%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5-ii-medium">240. 搜索二维矩阵 II Medium</a></li>
+<li><a href="#241-%E4%B8%BA%E8%BF%90%E7%AE%97%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%85%88%E7%BA%A7-medium">241. 为运算表达式设计优先级 Medium</a></li>
+<li><a href="#687-%E6%9C%80%E9%95%BF%E5%90%8C%E5%80%BC%E8%B7%AF%E5%BE%84-medium">687. 最长同值路径 Medium</a></li>
+<li><a href="#698-%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86-medium">698. 划分为k个相等的子集 Medium</a></li>
+<li><a href="#779-%E7%AC%ACk%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7-medium">779. 第K个语法符号 Medium</a></li>
+<li><a href="#783-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%8A%82%E7%82%B9%E6%9C%80%E5%B0%8F%E8%B7%9D%E7%A6%BB-easy">783. 二叉搜索树节点最小距离 Easy</a></li>
+<li><a href="#794-%E6%9C%89%E6%95%88%E7%9A%84%E4%BA%95%E5%AD%97%E6%B8%B8%E6%88%8F-medium">794. 有效的井字游戏 Medium</a></li>
+<li><a href="#894-%E6%89%80%E6%9C%89%E5%8F%AF%E8%83%BD%E7%9A%84%E6%BB%A1%E4%BA%8C%E5%8F%89%E6%A0%91-medium">894. 所有可能的满二叉树 Medium</a></li>
+<li><a href="#932-%E6%BC%82%E4%BA%AE%E6%95%B0%E7%BB%84-medium">932. 漂亮数组 Medium</a></li>
+<li><a href="#938-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E8%8C%83%E5%9B%B4%E5%92%8C-easy">938. 二叉搜索树的范围和 Easy</a></li>
+<li><a href="#973-%E6%9C%80%E6%8E%A5%E8%BF%91%E5%8E%9F%E7%82%B9%E7%9A%84-k-%E4%B8%AA%E7%82%B9-medium">973. 最接近原点的 K 个点 Medium</a></li>
+<li><a href="#1137-%E7%AC%AC-n-%E4%B8%AA%E6%B3%B0%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0-easy">1137. 第 N 个泰波那契数 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-07-%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91-medium">剑指 Offer 07. 重建二叉树 Medium</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-10-i-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97-easy">剑指 Offer 10- I. 斐波那契数列 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-10-ii-%E9%9D%92%E8%9B%99%E8%B7%B3%E5%8F%B0%E9%98%B6%E9%97%AE%E9%A2%98-easy">剑指 Offer 10- II. 青蛙跳台阶问题 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-16-%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9-medium">剑指 Offer 16. 数值的整数次方 Medium</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-25-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8-easy">剑指 Offer 25. 合并两个排序的链表 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-36-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8-medium">剑指 Offer 36. 二叉搜索树与双向链表 Medium</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-39-%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97-easy">剑指 Offer 39. 数组中出现次数超过一半的数字 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-40-%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0-easy">剑指 Offer 40. 最小的k个数 Easy</a></li>
+<li><a href="#%E5%89%91%E6%8C%87-offer-42-%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C-easy">剑指 Offer 42. 连续子数组的最大和 Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-0405-%E5%90%88%E6%B3%95%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91-medium">面试题 04.05. 合法二叉搜索树 Medium</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-0805-%E9%80%92%E5%BD%92%E4%B9%98%E6%B3%95-medium">面试题 08.05. 递归乘法 Medium</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-0806-%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98-easy">面试题 08.06. 汉诺塔问题 Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1009-%E6%8E%92%E5%BA%8F%E7%9F%A9%E9%98%B5%E6%9F%A5%E6%89%BE-medium">面试题 10.09. 排序矩阵查找 Medium</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1611-%E8%B7%B3%E6%B0%B4%E6%9D%BF-easy">面试题 16.11. 跳水板 Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1617-%E8%BF%9E%E7%BB%AD%E6%95%B0%E5%88%97-easy">面试题 16.17. 连续数列 Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1710-%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0-easy">面试题 17.10. 主要元素 Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1712-binode-easy">面试题 17.12. BiNode Easy</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E9%A2%98-1714-%E6%9C%80%E5%B0%8Fk%E4%B8%AA%E6%95%B0-medium">面试题 17.14. 最小K个数 Medium</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://kelu007.github.io/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Copyright@WangQilin</div>
+    <a class="rss" href="https://kelu007.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">Leetcode 题解</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-10-27 21:10 / 51 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://kelu007.github.io/post-images/leetcode-ti-jie.jpg" alt="">
+        
+        <div class="post-content yue">
+          <blockquote>
+<p>@author 王麒麟</p>
+<p>在此记录自己第<mark>1</mark>次刷题之旅~😊</p>
+</blockquote>
+<h2 id="4-寻找两个正序数组的中位数-hard"><a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/">4. 寻找两个正序数组的中位数 Hard</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定两个大小为 m 和 n 的正序（从小到大）数组 <code>nums1</code> 和 <code>nums2</code>。请你找出并返回这两个正序数组的中位数。</p>
+<p><strong>进阶</strong></p>
+<p>你能设计一个时间复杂度为 O(log (m+n)) 的算法解决此问题吗？</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：nums1 = [1,3], nums2 = [2]
+输出：2.00000
+解释：合并数组 = [1,2,3] ，中位数 2
+
+示例 2：
+输入：nums1 = [1,2], nums2 = [3,4]
+输出：2.50000
+解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
+
+示例 3：
+输入：nums1 = [0,0], nums2 = [0,0]
+输出：0.00000
+
+示例 4：
+输入：nums1 = [], nums2 = [1]
+输出：1.00000
+
+示例 5：
+输入：nums1 = [2], nums2 = []
+输出：2.00000
+</code></pre>
+<p><strong>提示</strong></p>
+<pre><code>nums1.length == m
+nums2.length == n
+0 &lt;= m &lt;= 1000
+0 &lt;= n &lt;= 1000
+1 &lt;= m + n &lt;= 2000
+-106 &lt;= nums1[i], nums2[i] &lt;= 106
+</code></pre>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>二分查找法</p>
+<pre><code class="language-c++">class Solution {
+public:
+    double findMedianSortedArrays(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) {
+        int length = nums1.size() + nums2.size();
+        if(length % 2 != 0)
+            return getKthElement(nums1, nums2, length / 2 + 1);
+        else
+            return (getKthElement(nums1, nums2, length / 2) + getKthElement(nums1, nums2, length / 2 + 1)) / 2.0;
+    }
+    
+    //得到第k小的元素
+    int getKthElement(const vector&lt;int&gt; nums1, const vector&lt;int&gt; nums2, int k){
+        int m = nums1.size();
+        int n = nums2.size();
+        int index1 = 0, index2 = 0; //分别用于检索nums1，nums2
+        while(true){
+            //边界情况
+            if(index1 == m)
+                return nums2[k + index2 - 1];
+            if(index2 == n)
+                return nums1[k + index1 - 1];
+            if(k == 1)
+                return min(nums1[index1], nums2[index2]);
+            
+            //一般情况
+            int newIndex1 = min(index1 + k/2 - 1, m - 1);   //在防止数组越界的情况下进行二分查找
+            int newIndex2 = min(index2 + k/2 -1, n - 1);
+            int pivot1 = nums1[newIndex1];
+            int pivot2 = nums2[newIndex2];
+            if(pivot1 &lt; pivot2){
+                k -= newIndex1 - index1 + 1;    //减少k的个数
+                index1 = newIndex1 + 1;
+            }
+            else{
+                k -= newIndex2 - index2 + 1;
+                index2 = newIndex2 + 1;
+            }
+        }
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>归并排序法</p>
+</li>
+</ul>
+<pre><code class="language-c++">class Solution {
+public:
+    double findMedianSortedArrays(vector&lt;int&gt;&amp; nums1, vector&lt;int&gt;&amp; nums2) {
+        int length = nums1.size() + nums2.size();
+        double result = 0;
+        if(length % 2 != 0)
+            result = findNum(nums1, nums2, length/2);
+        else
+            result = (findNum(nums1, nums2, length/2) + findNum(nums1, nums2, length/2 - 1)) / 2;
+        return result;        
+    }
+
+    //找到归并后数组的k号数
+    double findNum(vector&lt;int&gt; nums1, vector&lt;int&gt;nums2, int k){
+        int length = nums1.size() + nums2.size();
+        vector&lt;int&gt; nums;
+        int i = 0, j = 0;
+        int cur = 0;
+        while(i &lt; nums1.size() &amp;&amp; j &lt; nums2.size() &amp;&amp; cur &lt;= k){
+            if(nums1[i] &lt; nums2[j]){
+                nums.push_back(nums1[i++]);
+                cur++;
+            }
+            else{
+                nums.push_back(nums2[j++]);
+                cur++;
+            }
+        }
+        while(i &lt; nums1.size() &amp;&amp; cur &lt;= k){
+            nums.push_back(nums1[i++]);
+            cur++;
+        }
+        while(j &lt; nums2.size() &amp;&amp; cur &lt;= k){
+            nums.push_back(nums2[j++]);
+            cur++;
+        }
+        return nums[k];
+    }
+};
+</code></pre>
+<h2 id="53-最大子序和-easy"><a href="https://leetcode-cn.com/problems/maximum-subarray/">53. 最大子序和 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个整数数组 <code>nums</code> ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入: [-2,1,-3,4,-1,2,1,-5,4]
+输出: 6
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+</code></pre>
+<p><strong>进阶</strong></p>
+<p>如果你已经实现复杂度为 O(<em>n</em>) 的解法，尝试使用更为精妙的分治法求解。</p>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p><strong>动态规划</strong></p>
+<p>状态转移方程：令<code>f(i)</code>为以第i个数为结尾的最大子序和</p>
+<p><strong>f(i) = max{ nums[i], f(i-1) + nums[i] }</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    int maxSubArray(vector&lt;int&gt;&amp; nums) {
+        int pre = 0, maxNum = nums[0];
+        for(int number : nums){
+            pre = max(number, pre + number);
+            maxNum = max(pre, maxNum);
+        }
+        return maxNum;
+    }
+};
+</code></pre>
+</li>
+<li>
+<p><strong>分治</strong></p>
+<p>如果我们把区间 [0,n−1] 分治下去出现的所有子区间的信息都用堆式存储的方式记忆化下来，即建成一颗真正的树之后，我们就可以在 O(logn) 的时间内求到任意区间内的答案，我们甚至可以修改序列中的值，做一些简单的维护，之后仍然可以在 O(logn) 的时间内求到任意区间内的答案，对于大规模查询的情况下，这种方法的优势便体现了出来。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    struct status{
+        int lSum;   //[l,r]内以l为左端点的最大子序和
+        int rSum;   //[l,r]内以r为右端点的最大子序和
+        int iSum;   //[l,r]内的区间和
+        int mSum;   //[l,r]内的最大子序和
+    };
+
+    //治
+    status pushUp(status lSub, status rSub){
+        int iSum = lSub.iSum + rSub.iSum;
+        int rSum = max(rSub.rSum, rSub.iSum + lSub.rSum);
+        int lSum = max(lSub.lSum, lSub.iSum + rSub.lSum);
+        int mSum = max(max(lSub.mSum, rSub.mSum), lSub.rSum + rSub.lSum);
+        return (status){lSum, rSum, iSum, mSum};
+    }
+
+    //分
+    status get(const vector&lt;int&gt; nums, int l, int r){
+        if(l == r)
+            return (status){nums[l], nums[l], nums[l], nums[l]};
+        int mid = (l + r) / 2;
+        status lSub = get(nums, l, mid);
+        status rSub = get(nums, mid + 1, r);
+        return pushUp(lSub, rSub);
+    }
+
+    int maxSubArray(vector&lt;int&gt;&amp; nums) {
+        return get(nums, 0, nums.size()-1).mSum;
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="169-多数元素-easy"><a href="https://leetcode-cn.com/problems/majority-element/">169. 多数元素 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于<code>⌊ n/2 ⌋</code>的元素。</p>
+<p>你可以假设数组是非空的，并且给定的数组总是存在多数元素。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入: [3,2,3]
+输出: 3
+
+示例 2:
+输入: [2,2,1,1,1,2,2]
+输出: 2
+</code></pre>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>哈希表</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        unordered_map&lt;int, int&gt; counts;
+        int majority, cnt = 0;
+        for(int i : nums){
+            counts[i]++;
+            if(counts[i] &gt; cnt){
+                cnt = counts[i];
+                majority = i;
+            }
+        }
+        return majority;
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>分治</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        return majorityElementImp(nums, 0, nums.size()-1);    
+    }
+
+    int majorityElementImp(const vector&lt;int&gt; nums, int low, int high){
+        if(low == high)
+            return nums[low];
+        int mid = (low + high) / 2;
+        int leftMajority = majorityElementImp(nums, low, mid);
+        int rightMajority = majorityElementImp(nums, mid+1, high);
+        if(countInRange(nums, low, high, leftMajority) &gt; (high-low+1)/2)
+            return leftMajority;
+        if(countInRange(nums, low, high, rightMajority) &gt; (high-low+1)/2)
+            return rightMajority;
+        return -1;
+    }
+
+    int countInRange(const vector&lt;int&gt; nums, int low, int high, int majority){
+        int count = 0;
+        for(int i = low; i &lt;= high; i++)
+            if(nums[i] == majority)
+                count++;
+        return count;
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="215-数组中的第k个最大元素-medium"><a href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/">215. 数组中的第K个最大元素 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入: [3,2,1,5,6,4] 和 k = 2
+输出: 5
+    
+示例 2:
+输入: [3,2,3,1,2,4,5,5,6] 和 k = 4
+输出: 4
+</code></pre>
+<p><strong>说明</strong></p>
+<p>你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。</p>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>基于快速排序思想</p>
+<p>要找到第k个最大的数（即升序序列中的第n-k+1个数），因此其实我们无须关心其他数的排序情况。借鉴快排思想，每次选取一个基准元素pivot，然后进行数组划分，这样pivot最终的排序位置就确定下来了。</p>
+<p>设q为pivot对应数组下标，index为我们要找的第n-k+1个数对应的下标（n-k）</p>
+<p>​	若q = index，则nums[index]就是我们要找的数</p>
+<p>​	若q &gt; index，则继续在nums[l, q-1]中找</p>
+<p>​	若q &lt; index，则继续在nums[q+1, r]中找</p>
+<p>注意：此处与快速排序算法不同的是，这里每次在“分”之后的其中一个区间继续求解，而快速排序在“分”之后的每一个区间都要继续求解。因为这里只需求出第k个最大的数即可，不关心其他数，而快排是对所有数进行排序。</p>
+<p>时间复杂度：</p>
+<p>​	采用随机化方法，期望为：O(n)</p>
+<p>空间复杂度：</p>
+<p>​	即递归使用栈的空间，O(log n)</p>
+<pre><code class="language-c++">class Solution {
+public:
+    
+    int findKthLargest(vector&lt;int&gt;&amp; nums, int k) {
+        srand(time(0)); //用当前系统时间值设置种子
+        return quickSelect(nums, 0, nums.size()-1, nums.size()-k); 
+    }
+
+    int quickSelect(vector&lt;int&gt;&amp; nums, int l, int r, int index){
+        int q = randomPartition(nums, l, r);
+        if(q == index)
+            return nums[q];
+        else if(q &gt; index)
+            return quickSelect(nums, l, q-1, index);
+        else
+            return quickSelect(nums, q+1, r, index);
+    }
+
+    int randomPartition(vector&lt;int&gt;&amp; nums, int l, int r){
+        //random部分
+        int rNum = rand() % (r-l+1) + l;    //随机化选择基准元素
+        swap(nums[rNum], nums[r]);
+        //partition部分
+        int pivot = nums[r];
+        int i = l - 1;
+        for(int j = l; j &lt;= r; j++){
+            if(nums[j] &lt; pivot){
+                i++;
+                swap(nums[i], nums[j]);
+            }
+        }
+        //将pivot元素归位（即其最终位置）
+        i++;    
+        swap(nums[i], nums[r]);
+        return i;
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>堆排序法</p>
+<p>构建一个大根堆，然后对堆顶元素（即最大的元素）进行k-1次删除和相应调整，第k次时对应的堆顶元素即为要找的数。</p>
+<p>建堆 -&gt; 删除 -&gt; 调整</p>
+<p>注意：此处手撕代码实现堆，若嫌麻烦可直接使用优先队列等容器。</p>
+<pre><code class="language-C++">class Solution{
+public:
+    int findKthLargest(vector&lt;int&gt;&amp; nums, int k){
+        int heapSize = nums.size();
+        buildMaxHeap(nums, heapSize);
+        //删除 -&gt; 调整
+        for(int i = nums.size() - 1; i &gt;= nums.size() - (k - 1); i--){
+            swap(nums[0], nums[i]);
+            heapSize--;
+            maxHeapify(nums, 0, heapSize);
+        }
+        return nums[0];
+    }
+
+    //建堆
+    void buildMaxHeap(vector&lt;int&gt;&amp; nums, int heapSize){
+        //对第一个以非叶子节点(heapSize/2 -1)为根节点的树按从下往上、从左往右的顺序进行调整
+        for(int i = heapSize/2 - 1; i &gt;=0; i--)
+            maxHeapify(nums, i, heapSize);
+    }
+
+    //调整
+    void maxHeapify(vector&lt;int&gt;&amp; nums, int i, int heapSize){
+        int lchild = 2 * i + 1;
+        int rchild = 2 * i + 2;
+        int largest = i;
+        if(lchild &lt; heapSize &amp;&amp; nums[lchild] &gt; nums[largest])
+            largest = lchild;
+        if(rchild &lt; heapSize &amp;&amp; nums[rchild] &gt; nums[largest])
+            largest = rchild;
+        if(largest != i){
+            swap(nums[i], nums[largest]);
+            maxHeapify(nums, largest, heapSize);
+        }
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="240-搜索二维矩阵-ii-medium"><a href="https://leetcode-cn.com/problems/search-a-2d-matrix-ii/">240. 搜索二维矩阵 II Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。</p>
+<p>该矩阵具有以下特性：</p>
+<ul>
+<li>每行的元素从左到右升序排列</li>
+<li>每列的元素从上到下升序排列</li>
+</ul>
+<p><strong>示例</strong></p>
+<p>现有矩阵 matrix 如下：</p>
+<pre><code>[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+</code></pre>
+<p>给定 target = <code>5</code>，返回 <code>true</code>。</p>
+<p>给定 target = <code>20</code>，返回 <code>false</code>。</p>
+<p><strong>求解</strong></p>
+<p>利用该矩阵每行从左往右递增、每列从上往下递增的特点。</p>
+<p>初始化一个指针(row, column)指向矩阵最左下角的数。</p>
+<p>则</p>
+<p>​    若当前值大于目标值，则当前值左边的那些数可以排除，因此row--</p>
+<p>​    若当前值小于目标值，则当前值上面的那些数可以排除，因此column++</p>
+<p>​    若当前值等于目标值，则返回true</p>
+<p>在指针迭代过程中，若发生越界现象，说明矩阵中无目标值，则返回false。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    bool searchMatrix(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) {
+        if(matrix.empty()) //空数组时
+            return false;
+        int rowNum = matrix.size();
+        int colNum = matrix[0].size();
+        int row = rowNum - 1;
+        int col = 0;
+        while(row &gt; -1 &amp;&amp; col &lt; colNum){
+            if(matrix[row][col] == target)
+                return true;
+            else if(matrix[row][col] &lt; target)
+                col++;
+            else
+                row--;
+        }    
+        return false;
+    }
+};
+</code></pre>
+<h2 id="241-为运算表达式设计优先级-medium"><a href="https://leetcode-cn.com/problems/different-ways-to-add-parentheses/">241. 为运算表达式设计优先级 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个含有数字和运算符的字符串，为表达式添加括号，改变其运算优先级以求出不同的结果。你需要给出所有可能的组合的结果。有效的运算符号包含 <code>+</code>,<code>-</code> 以及<code>*</code> 。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入: &quot;2-1-1&quot;
+输出: [0, 2]
+解释: 
+((2-1)-1) = 0 
+(2-(1-1)) = 2
+
+示例 2:
+输入: &quot;2*3-4*5&quot;
+输出: [-34, -14, -10, -10, 10]
+解释: 
+(2*(3-(4*5))) = -34 
+((2*3)-(4*5)) = -14 
+((2*(3-4))*5) = -10 
+(2*((3-4)*5)) = -10 
+(((2*3)-4)*5) = 10
+</code></pre>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>分治</p>
+<p>遍历字符串</p>
+<ul>
+<li>
+<p>若当中存在运算符，以运算符作为分割线(相当于对其左、右部分分别加了括号)，求出其左、右两边相应可能的值，然后将左右两边的值根据运算符进行运算即可。</p>
+</li>
+<li>
+<p>若字符串只有数字，该数字就是最终的运算结果。</p>
+</li>
+</ul>
+<p>同时，可用Hashmap来优化，避免对多个相同子问题的重复计算。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    unordered_map&lt;string, vector&lt;int&gt;&gt; resultMap;
+    vector&lt;int&gt; diffWaysToCompute(string input) {
+        //优化
+        if(resultMap.find(input) != resultMap.end())
+            return resultMap[input];
+        vector&lt;int&gt; result;
+        for(int i = 0; i &lt; input.length(); i++){
+            char ch = input[i];
+            if(ch == '+' || ch =='-' || ch == '*'){
+                vector&lt;int&gt; leftResult = diffWaysToCompute(input.substr(0, i));
+                vector&lt;int&gt; rightResult = diffWaysToCompute(input.substr(i+1));
+                for(int left : leftResult){
+                    for(int right : rightResult){
+                        if(ch == '+')
+                            result.push_back(left + right);
+                        if(ch == '-')
+                            result.push_back(left - right);
+                        if(ch == '*')
+                            result.push_back(left * right);
+                    }
+                }
+            }
+        }
+        //当字符串中只有数字时
+        if(result.size() == 0)
+            result.push_back(stoi(input));  //注意使用stoi将String转换为int
+        resultMap.insert({input, result});
+        return result;
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="687-最长同值路径-medium"><a href="https://leetcode-cn.com/problems/longest-univalue-path/">687. 最长同值路径 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个二叉树，找到最长的路径，这个路径中的每个节点具有相同值。 这条路径可以经过也可以不经过根节点。</p>
+<p>注意：两个节点之间的路径长度由它们之间的边数表示。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入:
+         5
+         / \
+        4   5
+       / \   \
+      1   1   5
+输出:
+2
+
+示例 2:
+输入:
+          1
+         / \
+        4   5
+       / \   \
+      4   4   5
+输出:
+2
+</code></pre>
+<p>注意: 给定的二叉树不超过10000个结点。 树的高度不超过1000。</p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:     
+    int ans = 0;
+    //以root为根节点的树中的最长同值路径
+    int longestUnivaluePath(TreeNode* root) {
+        longestPath(root);
+        return ans;
+    }
+    //以node为起点的最长同值路径
+    int longestPath(TreeNode* node){
+        int maxLongestPath = 0;
+        if(node == NULL)
+            return 0;
+        int right = longestPath(node-&gt;right);
+        int left = longestPath(node-&gt;left);
+        if(node-&gt;left != NULL &amp;&amp; node-&gt;left-&gt;val == node-&gt;val &amp;&amp; node-&gt;right != NULL &amp;&amp; node-&gt;right-&gt;val == node-&gt;val )   //此时更新最长同值路径值ans（经过node、左子树、右子树）
+            ans = max(ans, (right + left + 2));
+        if(node-&gt;left != NULL &amp;&amp; node-&gt;left-&gt;val == node-&gt;val)  //以node为起点左子树中最长同值路径
+            maxLongestPath = left + 1;
+        if(node-&gt;right != NULL &amp;&amp; node-&gt;right-&gt;val == node-&gt;val) //以node为起点右子树中最长同值路径
+            maxLongestPath = max(maxLongestPath, (right + 1));
+        ans = max(ans, maxLongestPath); //更新ans
+        return maxLongestPath;    //注意该函数求的是以node为起点的最长同值路径，所以返回的是maxLongestPath，而非ans
+    }
+};
+</code></pre>
+<h2 id="698-划分为k个相等的子集-medium"><a href="https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/">698. 划分为k个相等的子集 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个整数数组 <code>nums</code> 和一个正整数 <code>k</code>，找出是否有可能把这个数组分成 <code>k</code> 个非空子集，其总和都相等。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入： nums = [4, 3, 2, 3, 5, 2, 1], k = 4
+输出： True
+
+说明： 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>1 &lt;= k &lt;= len(nums) &lt;= 16</code><br>
+<code>0 &lt; nums[i] &lt; 10000</code></p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    bool canPartitionKSubsets(vector&lt;int&gt;&amp; nums, int k) {
+        int target = 0; //每个非空子集的总和
+        for(int i = 0; i &lt; nums.size(); i++)
+            target += nums[i];
+        if(target % k != 0)
+            return false;
+        target /= k;
+        //将nums递减排序，从大到小地来试数，减少时间
+        sort(nums.begin(), nums.end(), greater&lt;int&gt;());
+        int n = nums.size();
+        vector&lt;int&gt; sum;   //sum[i]表示第i个集合的总和
+        
+        return dfs(n, 0, sum, target, k, nums);
+    }
+    /*
+    @para n 整数数组的元素数目； u 用于遍历nums； sum 存储集合总和的数组； target 每个子集的总和； k 非空子集数 
+    */
+    bool dfs(int n, int u, vector&lt;int&gt; sum, int target, int k, vector&lt;int&gt;&amp; nums){
+        if(u == n)  //所有元素已经放进了k个子集中
+            return true;
+        if(nums[u] &gt; target) //有元素大于target，则该元素无法加入任何一个子集
+            return false;
+        for(int i = 0; i &lt; sum.size(); i++){
+            if(nums[u] + sum[i] &gt; target)
+                continue;
+            sum[i] += nums[u];
+            if(!dfs(n, u+1, sum, target, k, nums))   //若该元素的下一个nums中的元素无法加入任何一个子集，则回退一步，重新放置现在的元素
+                sum[i] -= nums[u];
+            else
+                return true;
+        }
+        //第u元素无法加入现有子集，则新增一个子集
+        if(sum.size() == k)
+            return false;
+        sum.push_back(nums[u]);
+        if(!dfs(n, u+1, sum, target, k, nums)){ //看该元素的下一个元素是否可加入，是则返回真，否则回溯
+            sum.pop_back();
+            return false;
+        }
+        else
+            return true;
+    } 
+};
+</code></pre>
+<h2 id="779-第k个语法符号-medium"><a href="https://leetcode-cn.com/problems/k-th-symbol-in-grammar/">779. 第K个语法符号 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>在第一行我们写上一个 <code>0</code>。接下来的每一行，将前一行中的<code>0</code>替换为<code>01</code>，<code>1</code>替换为<code>10</code>。</p>
+<p>给定行数 <code>N</code> 和序数 <code>K</code>，返回第 <code>N</code> 行中第 <code>K</code>个字符。（<code>K</code>从1开始）</p>
+<p><strong>示例</strong></p>
+<pre><code>输入: N = 1, K = 1
+输出: 0
+
+输入: N = 2, K = 1
+输出: 0
+
+输入: N = 2, K = 2
+输出: 1
+
+输入: N = 4, K = 5
+输出: 1
+
+解释:
+第一行: 0
+第二行: 01
+第三行: 0110
+第四行: 01101001
+</code></pre>
+<p><strong>注意</strong></p>
+<p><code>N</code>的范围 <code>[1, 30]</code>.<br>
+<code>K</code> 的范围 <code>[1, 2^(N-1)]</code>.</p>
+<h2 id="783-二叉搜索树节点最小距离-easy"><a href="https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/">783. 二叉搜索树节点最小距离 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个二叉搜索树的根节点 root，返回树中任意两节点的差的最小值。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入: root = [4,2,6,1,3,null,null]
+输出: 1
+解释:
+注意，root是树节点对象(TreeNode object)，而不是数组。
+
+给定的树 [4,2,6,1,3,null,null] 可表示为下图:      
+      4
+    /   \
+  2      6
+ / \    
+1   3  
+
+最小的差值是 1, 它是节点1和节点2的差值, 也是节点3和节点2的差值。
+</code></pre>
+<p><strong>注意</strong></p>
+<p>二叉树的大小范围在 <code>2</code> 到 <code>100</code>。<br>
+二叉树总是有效的，每个节点的值都是整数，且不重复。<br>
+本题与 #530相同。</p>
+<p><strong>求解</strong></p>
+<pre><code class="language-java">class Solution {
+
+    Integer prev, ans;  //遍历序列中前一结点值；当前两结点距离最小值
+
+    public int minDiffInBST(TreeNode root) {
+        prev = null;
+        ans = Integer.MAX_VALUE;
+        dfs(root);
+        return ans;
+    }
+
+    public void dfs(TreeNode node) { 
+    //中序遍历二叉搜索树，得到递增序列，依次比较相邻两结点距离
+        if(node == null)
+            return;
+        dfs(node.left);
+        if(prev != null)
+            ans = Math.min(ans, node.val - prev);
+        prev = node.val;
+        dfs(node.right);
+    }
+
+}
+</code></pre>
+<h2 id="794-有效的井字游戏-medium"><a href="https://leetcode-cn.com/problems/valid-tic-tac-toe-state/">794. 有效的井字游戏 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>用字符串数组作为井字游戏的游戏板 board。当且仅当在井字游戏过程中，玩家有可能将字符放置成游戏板所显示的状态时，才返回 true。</p>
+<p>该游戏板是一个 3 x 3 数组，由字符 &quot; &quot;，&quot;X&quot; 和 &quot;O&quot; 组成。字符 &quot; &quot; 代表一个空位。</p>
+<p>以下是井字游戏的规则：</p>
+<ul>
+<li>玩家轮流将字符放入空位（&quot; &quot;）中。</li>
+<li>第一个玩家总是放字符 “X”，且第二个玩家总是放字符 “O”。</li>
+<li>“X” 和 “O” 只允许放置在空位中，不允许对已放有字符的位置进行填充。</li>
+<li>当有 3 个相同（且非空）的字符填充任何行、列或对角线时，游戏结束。</li>
+<li>当所有位置非空时，也算为游戏结束。</li>
+<li>如果游戏结束，玩家不允许再放置字符。</li>
+</ul>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入: board = [&quot;O  &quot;, &quot;   &quot;, &quot;   &quot;]
+输出: false
+解释: 第一个玩家总是放置“X”。
+
+示例 2:
+输入: board = [&quot;XOX&quot;, &quot; X &quot;, &quot;   &quot;]
+输出: false
+解释: 玩家应该是轮流放置的。
+
+示例 3:
+输入: board = [&quot;XXX&quot;, &quot;   &quot;, &quot;OOO&quot;]
+输出: false
+
+示例 4:
+输入: board = [&quot;XOX&quot;, &quot;O O&quot;, &quot;XOX&quot;]
+输出: true
+</code></pre>
+<p><strong>说明</strong></p>
+<ul>
+<li>游戏板 board 是长度为 3 的字符串数组，其中每个字符串 board[i] 的长度为 3。</li>
+<li>board[i][j]是集合 {&quot; &quot;, &quot;X&quot;, &quot;O&quot;} 中的一个字符。</li>
+</ul>
+<p><strong>求解</strong></p>
+<p>分类讨论法</p>
+<p>大前提：X数目必须大于等于O （因为X先放）</p>
+<ul>
+<li>X赢</li>
+<li>O赢</li>
+<li>平局</li>
+</ul>
+<pre><code class="language-c++">class Solution {
+public:
+    bool validTicTacToe(vector&lt;string&gt;&amp; board) {
+        int xNum = 0, oNum = 0;
+        for(int i = 0; i &lt;= 2; i++)
+            for(int j = 0; j &lt;= 2; j++)
+            {
+                if(board[i][j] == 'X')
+                    xNum++;
+                if(board[i][j] == 'O')
+                    oNum++;
+            }
+        if(xNum != oNum + 1 &amp;&amp; xNum != oNum)
+            return false;
+        if(win(board, 'X') &amp;&amp; xNum != oNum + 1)
+            return false;
+        if(win(board, 'O') &amp;&amp; xNum != oNum)
+            return false;
+        return true;
+    }
+
+    bool win(vector&lt;string&gt; board, char c){
+        for(int i = 0; i &lt;= 2; i++){
+            if(board[i][0] == c &amp;&amp; board[i][1] == c &amp;&amp; board[i][2] == c)    //看行
+                return true;
+            if(board[0][i] == c &amp;&amp; board[1][i] == c &amp;&amp; board[2][i] == c)    //看列
+                return true;
+        }
+        //看斜边
+        if(board[0][0] == c &amp;&amp; board[1][1] == c &amp;&amp; board[2][2] == c)
+            return true;
+        if(board[0][2] == c &amp;&amp; board[1][1] == c &amp;&amp; board[2][0] == c)
+            return true;
+        return false;
+    }
+};
+</code></pre>
+<h2 id="894-所有可能的满二叉树-medium"><a href="https://leetcode-cn.com/problems/all-possible-full-binary-trees/">894. 所有可能的满二叉树 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>满二叉树是一类二叉树，其中每个结点恰好有 0 或 2 个子结点。</p>
+<p>返回包含 N 个结点的所有可能满二叉树的列表。 答案的每个元素都是一个可能树的根结点。</p>
+<p>答案中每个树的每个结点都必须有 node.val=0。</p>
+<p>你可以按任何顺序返回树的最终列表。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入：7
+输出：[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]
+</code></pre>
+<p>解释：<br>
+<img src="https://kelu007.github.io/post-images/1603805216791.PNG" alt="" loading="lazy"></p>
+<p><strong>提示：</strong></p>
+<p><code>1 &lt;= N &lt;= 20</code></p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    vector&lt;TreeNode*&gt; allPossibleFBT(int N) {
+    vector&lt;TreeNode*&gt; FBTs;
+    //满二叉树的结点总数不可能是偶数
+    if(N % 2 == 0)
+        return FBTs;
+    if(N == 1){
+        FBTs.push_back(new TreeNode(0));
+        return FBTs;
+    }
+    //左子树总结点数可为1, 3, 5, ..., N-2 相应地，右子树总结点数可为N-2, ..., 5, 3, 1
+    for(int i=1; i&lt;=N-2; i+=2 ){
+        //递归得到左子树和右子树所有可能的满二叉树根节点指针集合
+        vector&lt;TreeNode*&gt; left = allPossibleFBT(i);
+        vector&lt;TreeNode*&gt; right = allPossibleFBT(N-1-i);
+        //对两个集合中的根结点指针进行排列组合就可以得出所有情况
+        for(int j = 0; j &lt; left.size(); j++)
+            for(int k = 0; k &lt; right.size(); k++){
+                TreeNode* node = new TreeNode(0);
+                node-&gt;left = left[j];
+                node-&gt;right = right[k];
+                FBTs.push_back(node);
+            }     
+    }
+    
+    return FBTs;
+    }
+};
+</code></pre>
+<h2 id="932-漂亮数组-medium"><a href="https://leetcode-cn.com/problems/beautiful-array/">932. 漂亮数组 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>对于某些固定的 <code>N</code>，如果数组 <code>A</code> 是整数 <code>1, 2, ..., N</code> 组成的排列，使得：</p>
+<p>对于每个 <code>i &lt; j</code>，都不存在<code>k</code> 满足<code>i &lt; k &lt; j</code>使得 <code>A[k] * 2 = A[i] + A[j]</code>。</p>
+<p>那么数组 <code>A</code>是漂亮数组。</p>
+<p>给定 <code>N</code>，返回任意漂亮数组<code>A</code>（保证存在一个）。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：4
+输出：[2,1,4,3]
+
+示例 2：
+输入：5
+输出：[3,1,2,5,4]
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>1 &lt;= N &lt;= 1000</code></p>
+<p><strong>求解</strong></p>
+<p>性质：对漂亮数组进行线性变换后，仍然可以得到一个漂亮数组</p>
+<p>因此，对于一个1...n的数组</p>
+<pre><code>分：将其分为一个值不超过(n+1)/2的数组和一个值不超过n/2的数组
+
+解决：分别将其映射到1...n的所有奇数和偶数
+
+治：将所得到的两部分（一部分是奇数，一部分是偶数）拼接起来即可
+</code></pre>
+<p>进一步优化：使用哈希表来存储已经求得的漂亮数组[m]，从而避免相同子问题的重复计算</p>
+<pre><code class="language-c++">class Solution {
+public:
+
+    unordered_map&lt;int, vector&lt;int&gt;&gt; resultMap;
+
+    vector&lt;int&gt; beautifulArray(int N) {
+        //优化
+        if(resultMap.find(N) != resultMap.end())
+            return resultMap[N];
+        vector&lt;int&gt; result;
+        if(N == 1)
+            result.push_back(1);
+        else{
+            //分
+            vector&lt;int&gt; odds = beautifulArray((N+1)/2); //用来映射奇数集合
+            vector&lt;int&gt; evens = beautifulArray(N/2);    //用来映射偶数集合
+            //治
+            for(int odd : odds)
+                result.push_back(2*odd - 1);
+            for(int even : evens)
+                result.push_back(2*even);
+        }
+        resultMap.insert({N, result});
+        return result;
+    }
+};
+</code></pre>
+<h2 id="938-二叉搜索树的范围和-easy"><a href="https://leetcode-cn.com/problems/range-sum-of-bst/">938. 二叉搜索树的范围和 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定二叉搜索树的根结点 <code>root</code>，返回 <code>L</code> 和 <code>R</code>（含）之间的所有结点的值的和。</p>
+<p>二叉搜索树保证具有唯一的值。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：root = [10,5,15,3,7,null,18], L = 7, R = 15
+输出：32
+
+示例 2：
+输入：root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
+输出：23
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>树中的结点数量最多为 <code>10000</code> 个。</li>
+<li>最终的答案保证小于 <code>2^31</code>。</li>
+</ul>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>方法一：适用于所有二叉树</p>
+<p>缺点：未利用本题二叉搜索树的特性</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int rangeSumBST(TreeNode* root, int L, int R) {
+        if(root == NULL)
+            return 0;
+        if(root-&gt;val &gt;= L &amp;&amp; root-&gt;val &lt;= R)
+            return (root-&gt;val + rangeSumBST(root-&gt;left, L ,R) + rangeSumBST(root-&gt;right, L, R));
+        else
+            return (rangeSumBST(root-&gt;left, L, R) + rangeSumBST(root-&gt;right, L, R));
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>方法二：利用二叉搜索树特性（左子树比根节点小，右子树比根节点大）</p>
+<p>根节点为空 退出</p>
+<p>根节点不为空</p>
+<pre><code>  根节点值小于L 返回 rangeSumBST(root-&gt;right, L, R)
+
+  根节点值大于R 返回 rangeSumBST(root-&gt;left, L , R)
+</code></pre>
+<p>根节点值大于等于L且小于等于R 返回 根节点值+rangeSumBST(root-&gt;left, L , R)+rangeSumBST(root-&gt;right, L, R)</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int rangeSumBST(TreeNode* root, int L, int R) {
+        if(root == NULL)
+            return 0;
+        if(root-&gt;val &lt; L)  //只需在其右子树继续搜索
+            return rangeSumBST(root-&gt;right, L, R);
+        else if(root-&gt;val &gt; R)  //只需在其左子树继续搜索
+            return rangeSumBST(root-&gt;left, L, R);
+        else 
+            return (root-&gt;val + rangeSumBST(root-&gt;left, L, R) + rangeSumBST(root-&gt;right, L, R));
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="973-最接近原点的-k-个点-medium"><a href="https://leetcode-cn.com/problems/k-closest-points-to-origin/">973. 最接近原点的 K 个点 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>我们有一个由平面上的点组成的列表 <code>points</code>。需要从中找出<code>K</code> 个距离原点<code>(0, 0)</code> 最近的点。</p>
+<p>（这里，平面上两点之间的距离是欧几里德距离。）</p>
+<p>你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：points = [[1,3],[-2,2]], K = 1
+输出：[[-2,2]]
+解释： 
+(1, 3) 和原点之间的距离为 sqrt(10)，
+(-2, 2) 和原点之间的距离为 sqrt(8)，
+由于 sqrt(8) &lt; sqrt(10)，(-2, 2) 离原点更近。
+我们只需要距离原点最近的 K = 1 个点，所以答案就是 [[-2,2]]。
+
+示例 2：
+输入：points = [[3,3],[5,-1],[-2,4]], K = 2
+输出：[[3,3],[-2,4]]
+（答案 [[-2,4],[3,3]] 也会被接受。）
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>1 &lt;= K &lt;= points.length &lt;= 10000</code></li>
+<li><code>-10000 &lt; points[i][0] &lt; 10000</code></li>
+<li><code>-10000 &lt; points[i][1] &lt; 10000</code></li>
+</ul>
+<p><strong>求解</strong></p>
+<p>本题与#215类似，基于快排思想</p>
+<p>时间复杂度：</p>
+<pre><code> 采用随机化方法，期望为：O(n)
+</code></pre>
+<p>空间复杂度：</p>
+<pre><code> rpoints二维数组，O(n)
+</code></pre>
+<pre><code class="language-c++">class Solution {
+public:
+    vector&lt;vector&lt;int&gt;&gt; rpoints;
+    vector&lt;vector&lt;int&gt;&gt; kClosest(vector&lt;vector&lt;int&gt;&gt;&amp; points, int K) {
+        rpoints = points;
+        srand(time(0));
+        quickSelect(0, rpoints.size()-1, K-1);
+        return vector&lt;vector&lt;int&gt;&gt;(rpoints.begin(), rpoints.begin()+K); //begin...begin+K
+    }
+    //快速选择
+    void quickSelect(int l, int r, int index){
+        int q = randomPartition(l, r);
+        if(q == index)
+            return;
+        else if(q &gt; index)
+            quickSelect(l, q-1, index);
+        else    
+            quickSelect(q+1, r, index);
+    }
+    //随机划分
+    int randomPartition(int l, int r){
+        //random
+        int rNum = rand() % (r-l+1) + l;
+        swapPoints(r, rNum);
+        //partition
+        int pivot = dist(r);
+        int i = l - 1;
+        for(int j = l; j &lt;= r; j++){
+            if(dist(j) &lt; pivot){
+                i++;
+                swapPoints(i, j);
+            }
+        }
+        //基准元素归位（即其最终位置）
+        i++;
+        swapPoints(i, r);
+        return i;
+    }
+    //交换两个点相应的值
+    void swapPoints(int i, int j){
+        int tmp1 = rpoints[i][0];
+        int tmp2 = rpoints[i][1];
+        rpoints[i][0] = rpoints[j][0];
+        rpoints[i][1] = rpoints[j][1];
+        rpoints[j][0] = tmp1;
+        rpoints[j][1] = tmp2;
+    }
+    //计算点到原点的距离的平方
+    int dist(int i){
+        return rpoints[i][0]*rpoints[i][0] + rpoints[i][1]*rpoints[i][1];
+    }
+};
+</code></pre>
+<h2 id="1137-第-n-个泰波那契数-easy"><a href="https://leetcode-cn.com/problems/n-th-tribonacci-number/">1137. 第 N 个泰波那契数 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>泰波那契序列 Tn 定义如下：</p>
+<p>T0 = 0, T1 = 1, T2 = 1, 且在 n &gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+2</p>
+<p>给你整数 n，请返回第 n 个泰波那契数 Tn 的值。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：n = 4
+输出：4
+解释：
+T_3 = 0 + 1 + 1 = 2
+T_4 = 1 + 1 + 2 = 4
+
+示例 2：
+输入：n = 25
+输出：1389537
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>0 &lt;= n &lt;= 37</code></li>
+<li>答案保证是一个 32 位整数，即 <code>answer &lt;= 2^31 - 1</code>。</li>
+</ul>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    int tribonacci(int n) {
+        if(n == 0)
+            return 0;
+        if(n == 1 || n == 2)
+            return 1;
+        int NPlusOne = 1, NPlusTwo = 1, N = 0;
+        int NPlusThree;
+        while(n &gt;= 3) {
+        NPlusThree = N + NPlusOne + NPlusTwo;
+        N = NPlusOne;
+        NPlusOne = NPlusTwo;
+        NPlusTwo = NPlusThree;
+        n--;
+        }
+        return NPlusThree;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-07-重建二叉树-medium"><a href="https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/">剑指 Offer 07. 重建二叉树 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。</p>
+<p>本题与#105重复。</p>
+<p><strong>示例</strong></p>
+<pre><code>给出
+前序遍历 preorder = [3,9,20,15,7]
+中序遍历 inorder = [9,3,15,20,7]
+
+返回如下的二叉树：
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</code></pre>
+<p><strong>限制</strong></p>
+<p><code>0 &lt;= 节点个数 &lt;= 5000</code></p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    map&lt;int, int&gt; inOrder;  //存储(中序序列值, 索引序号)，方便之后的查找
+    TreeNode* buildTree(vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder) {
+        for(int i = 0; i &lt; inorder.size(); i++)
+            inOrder[inorder[i]] = i;
+        return  build(preorder, inorder, 0, 0, inorder.size()-1);
+    }
+    /*
+    @para preorder 先序序列数组 inorder 中序序列数组 
+    @para pre_root 根节点在先序序列中的索引序号 in_left 中序左边界 in_right 中序右边界
+    */
+    TreeNode* build(vector&lt;int&gt; preorder, vector&lt;int&gt; inorder, int pre_root, int in_left, int in_right){
+        if(in_left &gt; in_right)
+            return NULL;
+        TreeNode* root = new TreeNode(preorder[pre_root]);
+        int in_root = inOrder[preorder[pre_root]];    //根节点在中序序列中的索引序号
+        root-&gt;left = build(preorder, inorder, pre_root+1, in_left, in_root-1);
+        root-&gt;right = build(preorder, inorder, pre_root + (in_root-in_left) + 1, in_root + 1, in_right);
+        return root;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-10-i-斐波那契数列-easy"><a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/">剑指 Offer 10- I. 斐波那契数列 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：</p>
+<p>F(0) = 0,   F(1) = 1.</p>
+<p>F(N) = F(N - 1) + F(N - 2), 其中 N &gt; 1.</p>
+<p>斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。</p>
+<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：n = 2
+输出：1
+
+示例 2：
+输入：n = 5
+输出：5
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>0 &lt;= n &lt;= 100</code></p>
+<p><strong>求解</strong></p>
+<ul>
+<li>
+<p>递归 规模大时不适用</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int fib(int n) {
+        if(n == 0)
+            return 0;
+        else if(n == 1)
+            return 1;
+        else
+            return (fib(n-1) + fib(n-2)) % 10000000007;
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>（本题解法）非递归求解 避免重复计算</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int fib(int n) {
+        if(n == 0)
+            return 0;
+        if(n == 1)
+            return 1;
+        int N = 0, NMinus1 = 1, NMinus2 = 0;    //分别对应f(n), f(n-1), f(n-2)
+        while(n &gt;= 2){
+            N = (NMinus1 + NMinus2) % 1000000007;  //取模运算为题目要求
+            NMinus2 = NMinus1;  //利用之前计算的结果，避免重复计算
+            NMinus1 = N;
+            n--;
+        }
+        return N;
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="剑指-offer-10-ii-青蛙跳台阶问题-easy"><a href="https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/">剑指 Offer 10- II. 青蛙跳台阶问题 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p>
+<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：n = 2
+输出：2
+
+示例 2：
+输入：n = 7
+输出：21
+
+示例 3：
+输入：n = 0
+输出：1
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>0 &lt;= n &lt;= 100</code></p>
+<p><strong>求解</strong></p>
+<p>本质上为斐波那契数列问题，只不过初始值有所不同，这里的f(2) = 2</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int numWays(int n) {
+        if(n == 0 || n == 1)
+            return 1;
+        if(n == 2)
+            return 2;
+        int N = 0, NMinusOne = 2, NMinusTwo = 1;
+        while(n &gt;= 3){
+            N = (NMinusOne + NMinusTwo) % 1000000007;
+            NMinusTwo = NMinusOne;
+            NMinusOne = N;
+            n--;
+        }
+        return N;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-16-数值的整数次方-medium"><a href="https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/">剑指 Offer 16. 数值的整数次方 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入: 2.00000, 10
+输出: 1024.00000
+
+示例 2:
+输入: 2.10000, 3
+输出: 9.26100
+
+示例 3:
+输入: 2.00000, -2
+输出: 0.25000
+解释: 2-2 = 1/22 = 1/4 = 0.25
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li>-100.0 &lt; <em>x</em> &lt; 100.0</li>
+<li><em>n</em> 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。</li>
+</ul>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    double myPow(double x, int n) {
+        if(n == 0)
+            return 1.0;
+        if(n == 1)
+            return x;
+        if(n == -1)
+            return 1.0/x;
+        //采用二分的思路来递归，以此减少乘法次数
+        //幂次为偶数时
+        if(abs(n) % 2 == 0){
+            double num = myPow(x, n/2);
+            return num*num;
+        }
+        //幂次为奇数时
+        if(abs(n) % 2 != 0){
+            if(n &gt; 0){
+                double num = myPow(x, n/2);
+                return num*num*x;
+            }
+            if(n &lt; 0){
+                double num = myPow(x, n/2);
+                return num*num*(1/x);
+            }
+        }
+        return 0.0;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-25-合并两个排序的链表-easy"><a href="https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/">剑指 Offer 25. 合并两个排序的链表 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。</p>
+<p>本题与#21相同。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4
+输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>0 &lt;= 链表长度 &lt;= 1000</code></p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        if(l1 == NULL &amp;&amp; l2 != NULL)
+            return l2;
+        if(l1 != NULL &amp;&amp; l2 == NULL)
+            return l1;
+        if(l1 == NULL &amp;&amp; l2 == NULL)
+            return NULL;
+        ListNode* head;
+        if(l1-&gt;val &lt;= l2-&gt;val){
+            head = new ListNode(l1-&gt;val);
+            head -&gt; next = mergeTwoLists(l1-&gt;next, l2);
+        }
+        else{
+            head = new ListNode(l2-&gt;val);
+            head -&gt; next = mergeTwoLists(l1, l2-&gt;next);
+        }
+        return head;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-36-二叉搜索树与双向链表-medium"><a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/">剑指 Offer 36. 二叉搜索树与双向链表 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。</p>
+<p>注意：本题与#426相同。</p>
+<p><strong>示例</strong></p>
+<p>为了让您更好地理解问题，以下面的二叉搜索树为例：</p>
+<figure data-type="image" tabindex="1"><img src="https://kelu007.github.io/post-images/1603805164260.png" alt="" loading="lazy"></figure>
+<p>我们希望将这个二叉搜索树转化为双向循环链表。链表中的每个节点都有一个前驱和后继指针。对于双向循环链表，第一个节点的前驱是最后一个节点，最后一个节点的后继是第一个节点。</p>
+<p>下图展示了上面的二叉搜索树转化成的链表。“head” 表示指向链表中有最小元素的节点。</p>
+<figure data-type="image" tabindex="2"><img src="https://kelu007.github.io/post-images/1603805185978.png" alt="" loading="lazy"></figure>
+<p>特别地，我们希望可以就地完成转换操作。当转化完成以后，树中节点的左指针需要指向前驱，树中节点的右指针需要指向后继。还需要返回链表中的第一个节点的指针。</p>
+<p><strong>求解</strong></p>
+<p>[中序遍历] BST的中序遍历序列为递增序列。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    Node *pre = NULL;   //前驱节点
+    Node *head = NULL;  //头结点
+    Node* treeToDoublyList(Node* root) {
+        if(root == NULL)
+            return NULL;
+        inOrder(root);
+        pre-&gt;right = head;
+        head-&gt;left = pre;
+        return head;
+    }
+    void inOrder(Node* cur){
+        if(cur == NULL)
+            return;
+        inOrder(cur-&gt;left);
+        if(pre == NULL)
+            head = cur;
+        else
+            pre-&gt;right = cur;
+        cur-&gt;left = pre;
+        pre = cur;        
+        inOrder(cur-&gt;right);
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-39-数组中出现次数超过一半的数字-easy"><a href="https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/">剑指 Offer 39. 数组中出现次数超过一半的数字 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。</p>
+<p>你可以假设数组是非空的，并且给定的数组总是存在多数元素。</p>
+<p>注意：本题与#169相同。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入: [1, 2, 3, 2, 2, 2, 5, 4, 2]
+输出: 2
+</code></pre>
+<p><strong>提示</strong></p>
+<p><code>1 &lt;= 数组长度 &lt;= 50000</code></p>
+<p><strong>求解</strong></p>
+<p>本题与#169相同，此处仅用哈希表解决。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        unordered_map&lt;int, int&gt; counts;
+        int result = 0;
+        for(int number : nums)
+            if(++counts[number] &gt; nums.size()/2)
+                result = number;
+        return result;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-40-最小的k个数-easy"><a href="https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/">剑指 Offer 40. 最小的k个数 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>输入整数数组 <code>arr</code> ，找出其中最小的 <code>k</code> 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：arr = [3,2,1], k = 2
+输出：[1,2] 或者 [2,1]
+
+示例 2：
+输入：arr = [0,1,2,1], k = 1
+输出：[0]
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>0 &lt;= k &lt;= arr.length &lt;= 10000</code></li>
+<li><code>0 &lt;= arr[i] &lt;= 10000</code></li>
+</ul>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    vector&lt;int&gt; getLeastNumbers(vector&lt;int&gt;&amp; arr, int k) {
+        sort(arr.begin(), arr.end());
+        vector&lt;int&gt; result;
+        for(int i = 0; i &lt; k; i++){
+            result.push_back(arr[i]);
+        }
+        return result;
+    }
+};
+</code></pre>
+<h2 id="剑指-offer-42-连续子数组的最大和-easy"><a href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/">剑指 Offer 42. 连续子数组的最大和 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。</p>
+<p>要求时间复杂度为O(n)。</p>
+<p>注意：本题与主站 53 题相同。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入: nums = [-2,1,-3,4,-1,2,1,-5,4]
+输出: 6
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>1 &lt;= arr.length &lt;= 10^5</code></li>
+<li><code>-100 &lt;= arr[i] &lt;= 100</code></li>
+</ul>
+<p><strong>求解</strong></p>
+<p>本题与#53题相同，此处仅用动态规划法来求解。</p>
+<p>状态转移方程：<strong>f(i) = max(nums[i], f(i-1) + nums[i])</strong>  f(i)为以i为结尾的最大子序和</p>
+<pre><code class="language-C++">class Solution {
+public:
+    int maxSubArray(vector&lt;int&gt;&amp; nums) {
+        int pre = 0, maxSub = nums[0];
+        for(int number : nums){
+            pre = max(number, pre + number);
+            if(pre &gt; maxSub)
+                maxSub = pre;
+        }
+        return maxSub;
+    }
+};
+</code></pre>
+<h2 id="面试题-0405-合法二叉搜索树-medium"><a href="https://leetcode-cn.com/problems/legal-binary-search-tree-lcci/">面试题 04.05. 合法二叉搜索树 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>实现一个函数，检查一棵二叉树是否为二叉搜索树。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1:
+输入:
+    2
+   / \
+  1   3
+输出: true
+
+示例 2:
+输入:
+    5
+   / \
+  1   4
+     / \
+    3   6
+输出: false
+解释: 输入为: [5,1,4,null,null,3,6]。
+     根节点的值为 5 ，但是其右子节点值为 4 。
+</code></pre>
+<p><strong>求解</strong></p>
+<pre><code class="language-java">class Solution {
+    
+    long prev; //中序遍历序列前一结点值
+    boolean flag; //中序遍历序列是否递增
+    
+    public boolean isValidBST(TreeNode root) {
+        prev = Long.MIN_VALUE;
+        flag = true;
+        dfs(root);
+        return flag;
+    }
+    
+    public void dfs(TreeNode node) {
+        if(node == null || flag == false) return;
+        dfs(node.left);
+        if(node.val &gt; prev)
+            prev = node.val;
+        else
+            flag = false;
+        dfs(node.right);
+    }
+    
+}
+</code></pre>
+<h2 id="面试题-0805-递归乘法-medium"><a href="https://leetcode-cn.com/problems/recursive-mulitply-lcci/">面试题 08.05. 递归乘法 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>递归乘法。 写一个递归函数，不使用 * 运算符， 实现两个正整数的相乘。可以使用加号、减号、位移，但要吝啬一些。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例1:
+输入：A = 1, B = 10
+输出：10
+
+示例2:
+输入：A = 3, B = 4
+输出：12
+</code></pre>
+<p><strong>提示</strong></p>
+<p>保证乘法范围不会溢出。</p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    int multiply(int A, int B) {
+        int MIN = min(A, B);
+        int MAX = max(A, B);
+        int result = 0;
+        for(int i = 0; MIN != 0; i++){
+            if(MIN &amp; 1 == 1)
+                result += MAX&lt;&lt;i;
+            MIN &gt;&gt;= 1;
+        }
+        return result;
+    }
+};
+</code></pre>
+<h2 id="面试题-0806-汉诺塔问题-easy"><a href="https://leetcode-cn.com/problems/hanota-lcci/">面试题 08.06. 汉诺塔问题 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>在经典汉诺塔问题中，有 3 根柱子及 N 个不同大小的穿孔圆盘，盘子可以滑入任意一根柱子。一开始，所有盘子自上而下按升序依次套在第一根柱子上(即每一个盘子只能放在更大的盘子上面)。移动圆盘时受到以下限制:<br>
+(1) 每次只能移动一个盘子;</p>
+<p>(2) 盘子只能从柱子顶端滑出移到下一根柱子;</p>
+<p>(3) 盘子只能叠在比它大的盘子上。</p>
+<p>请编写程序，用栈将所有盘子从第一根柱子移到最后一根柱子。</p>
+<p>你需要原地修改栈。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例1:
+ 输入：A = [2, 1, 0], B = [], C = []
+ 输出：C = [2, 1, 0]
+ 
+示例2:
+ 输入：A = [1, 0], B = [], C = []
+ 输出：C = [1, 0]
+</code></pre>
+<p><strong>提示</strong></p>
+<p>A中盘子的数目不大于14个。</p>
+<p><strong>求解</strong></p>
+<p>汉诺塔问题（想办法将A柱上的圆盘借助B柱最终移动到C柱）解决思路：</p>
+<p>​    1. 将n-1个圆盘从A柱借助C柱最终移动到B柱 hanoi(n-1, A, C, B)</p>
+<p>​    2. 将A柱上仅剩的第n个圆盘从A柱移动到C柱 move(n, A, C)</p>
+<p>​    3. 将B柱上的圆盘借助A柱最终移动到C柱 hanoi(n-1, B, A, C)</p>
+<pre><code class="language-c++">class Solution {
+public:
+    
+    void hanota(vector&lt;int&gt;&amp; A, vector&lt;int&gt;&amp; B, vector&lt;int&gt;&amp; C) {
+        int N = A.size();
+        hanoi(N, A, B, C);
+    }
+
+    void hanoi(int n, vector&lt;int&gt; &amp;A, vector&lt;int&gt; &amp;B, vector&lt;int&gt; &amp;C){
+        if(n == 1){ //递归出口
+            C.push_back(A.back());
+            A.pop_back();
+            return;
+        }
+        //步骤1
+        hanoi(n-1, A, C, B);
+        //步骤2
+        C.push_back(A.back());
+        A.pop_back();
+        //步骤3
+        hanoi(n-1, B, A, C);
+    }
+};
+</code></pre>
+<h2 id="面试题-1009-排序矩阵查找-medium"><a href="https://leetcode-cn.com/problems/sorted-matrix-search-lcci/">面试题 10.09. 排序矩阵查找 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定M×N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。</p>
+<p><strong>示例</strong></p>
+<pre><code>现有矩阵 matrix 如下：
+
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+
+给定 target = 5，返回 true。
+给定 target = 20，返回 false。
+</code></pre>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">//本题与#240相同
+class Solution {
+public:
+    bool searchMatrix(vector&lt;vector&lt;int&gt;&gt;&amp; matrix, int target) {
+        if(matrix.size() == 0 || matrix[0].size() == 0)
+            return false;
+        //从二维矩阵左下角的元素开始搜索
+        int row = matrix.size() - 1;
+        int column = 0;
+        while(row &gt; -1 &amp;&amp; column &lt; matrix[0].size()){
+            if(matrix[row][column] == target)
+                return true;
+            else if(matrix[row][column] &gt; target)
+                row--;
+            else
+                column++;
+        }
+        return false;
+    }
+};
+</code></pre>
+<h2 id="面试题-1611-跳水板-easy"><a href="https://leetcode-cn.com/problems/diving-board-lcci/">面试题 16.11. 跳水板 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为shorter，长度较长的木板长度为longer。你必须正好使用k块木板。编写一个方法，生成跳水板所有可能的长度。</p>
+<p>返回的长度需要从小到大排列。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入：
+shorter = 1
+longer = 2
+k = 3
+输出： [3,4,5,6]
+解释：
+可以使用 3 次 shorter，得到结果 3；使用 2 次 shorter 和 1 次 longer，得到结果 4 。以此类推，得到最终结果。
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>0 &lt; shorter &lt;= longer</code></li>
+<li><code>0 &lt;= k &lt;= 100000</code></li>
+</ul>
+<p><strong>求解</strong></p>
+<p>跳水板问题有以下几种情况</p>
+<ol>
+<li>
+<p>shorter = longer：此时长度只有1种，即k*shorter</p>
+</li>
+<li>
+<p>k = 0：此时无法构造长度，返回空向量</p>
+</li>
+<li>
+<p>shorter &lt; longer：此时长度有k+1种，即(k-i)*shorter + i*longer 其中0 &lt;= i &lt;=k</p>
+<p>​    证明情况3：</p>
+<p>​    length = k*shorter + (longer - shorter)*i</p>
+<p>​    而longer-shorter &gt; 0</p>
+<p>​    故length随i的变化而变化</p>
+<p>​    i可取0...k，故长度有k+1种</p>
+</li>
+</ol>
+<pre><code class="language-c++">class Solution {
+public:
+    vector&lt;int&gt; divingBoard(int shorter, int longer, int k) {
+        vector&lt;int&gt; lengthOfBoard;
+        if(k == 0)
+            return vector&lt;int&gt; ();
+        if(shorter == longer){
+            lengthOfBoard.push_back(k*shorter);
+            return lengthOfBoard;
+        }
+        if(shorter &lt; longer){
+            for(int i = 0; i &lt;= k; i++)
+                lengthOfBoard.push_back((k-i)*shorter + i*longer);
+        }
+        return lengthOfBoard;
+    }
+};
+</code></pre>
+<h2 id="面试题-1617-连续数列-easy"><a href="https://leetcode-cn.com/problems/contiguous-sequence-lcci/">面试题 16.17. 连续数列 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>给定一个整数数组，找出总和最大的连续数列，并返回总和。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入： [-2,1,-3,4,-1,2,1,-5,4]
+输出： 6
+解释： 连续子数组 [4,-1,2,1] 的和最大，为 6。
+</code></pre>
+<p><strong>进阶</strong></p>
+<p>如果你已经实现复杂度为 O(<em>n</em>) 的解法，尝试使用更为精妙的分治法求解。</p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    int maxSubArray(vector&lt;int&gt;&amp; nums) {
+        if(nums.size() == 0)
+            return INT_MIN;
+        return maxSum(nums, 0, nums.size()-1);
+    }
+    int maxSum(vector&lt;int&gt; nums, int left, int right){
+        /*以中间元素mid为分界
+        1. [left, mid]中最大连续数列和
+        2. (mid, right]中最大连续数列和
+        3. 经过mid的最大连续数列和
+        取三者中最大值即可
+        */
+        if(left == right)
+            return nums[left];
+        int mid = (right + left) / 2;
+        //情况1
+        int leftSum = maxSum(nums, left, mid);
+        //情况2
+        int rightSum = maxSum(nums, mid + 1,  right);
+        //情况3
+        int leftMidSum = 0, leftMidMaxSum = INT_MIN;
+        for(int i = mid; i &gt;= left; i--){
+            leftMidSum += nums[i];
+            leftMidMaxSum = max(leftMidMaxSum, leftMidSum);
+        }
+        int rightMidSum = 0, rightMidMaxSum = INT_MIN;
+        for(int i = mid + 1; i &lt;= right; i++){
+            rightMidSum += nums[i];
+            rightMidMaxSum = max(rightMidMaxSum, rightMidSum);
+        }
+        int midSum = leftMidMaxSum + rightMidMaxSum;
+        return max(max(leftSum, rightSum), midSum);
+    }
+};
+</code></pre>
+<h2 id="面试题-1710-主要元素-easy"><a href="https://leetcode-cn.com/problems/find-majority-element-lcci/">面试题 17.10. 主要元素 Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>数组中占比超过一半的元素称之为主要元素。给定一个<strong>整数</strong>数组，找到它的主要元素。若没有，返回-1。</p>
+<p><strong>示例</strong></p>
+<pre><code>示例 1：
+输入：[1,2,5,9,5,9,5,5,5]
+输出：5
+
+示例 2：
+输入：[3,2]
+输出：-1
+ 
+示例 3：
+输入：[2,2,1,1,1,2,2]
+输出：2
+</code></pre>
+<p><strong>提示</strong></p>
+<p>你有办法在时间复杂度为 O(N)，空间复杂度为 O(1) 内完成吗？</p>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">//本题与#169相同，此处仅用哈希表解决
+class Solution {
+public:
+    int majorityElement(vector&lt;int&gt;&amp; nums) {
+        unordered_map&lt;int, int&gt; counts;
+        int result = 0;
+        bool flag = false;
+        for(int number : nums)
+            if(++counts[number] &gt; nums.size()/2){
+                result = number;
+                flag = true;
+            }
+        if(flag)
+            return result;
+        else
+            return -1;
+    }
+};
+</code></pre>
+<h2 id="面试题-1712-binode-easy"><a href="https://leetcode-cn.com/problems/binode-lcci/">面试题 17.12. BiNode Easy</a></h2>
+<p><strong>题目描述</strong></p>
+<p>二叉树数据结构TreeNode可用来表示单向链表（其中left置空，right为下一个链表节点）。实现一个方法，把二叉搜索树转换为单向链表，要求依然符合二叉搜索树的性质，转换操作应是原址的，也就是在原始的二叉搜索树上直接修改。</p>
+<p>返回转换后的单向链表的头节点。</p>
+<p>注意：本题相对原题稍作改动。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入： [4,2,5,1,3,null,6,0]
+输出： [0,null,1,null,2,null,3,null,4,null,5,null,6]
+</code></pre>
+<p><strong>提示</strong></p>
+<p>节点数量不会超过 100000。</p>
+<p><strong>求解</strong></p>
+<p>中序遍历（LNR），遍历过程中修改相应指针</p>
+<ul>
+<li>
+<p>非递归解法</p>
+<pre><code class="language-c++">class Solution {
+public:
+    TreeNode* convertBiNode(TreeNode* root) {
+        TreeNode *top, *pren = NULL, *head = NULL;  //栈顶指针 前一个结点指针 头指针
+        stack&lt;TreeNode*&gt; st;
+        while(root != NULL || !st.empty()){
+            //L 将该结点的所有左孩子入栈
+            while(root != NULL){
+                st.push(root);
+                root = root -&gt; left;
+            }
+            //N
+            top = st.top();  
+            st.pop();
+            top-&gt;left = NULL;
+            if(pren != NULL)
+                pren-&gt;right = top;
+            if(head == NULL)    //使head指向最左下角的左孩子
+                head = top;
+            //R
+            pren = top;
+            root = top-&gt;right;
+        }
+        return head;
+    }
+};
+</code></pre>
+</li>
+<li>
+<p>递归解法</p>
+<pre><code class="language-c++">class Solution {
+public:
+    TreeNode *ans = new TreeNode(0),*cur=ans;
+    void inOrder(TreeNode* node)
+    {
+        if(node==NULL)  return ;
+        inOrder(node-&gt;left);
+        node-&gt;left=NULL;    //将该节点的左孩子设为NULL
+        cur-&gt;right=node;    //将该节点赋给上一个节点的右孩子
+        cur=node;           //更新cur
+        inOrder(node-&gt;right);
+    }
+    TreeNode* convertBiNode(TreeNode* root) {
+        inOrder(root);
+        return ans-&gt;right;
+    }
+};
+</code></pre>
+</li>
+</ul>
+<h2 id="面试题-1714-最小k个数-medium"><a href="https://leetcode-cn.com/problems/smallest-k-lcci/">面试题 17.14. 最小K个数 Medium</a></h2>
+<p><strong>题目描述</strong></p>
+<p>设计一个算法，找出数组中最小的k个数。以任意顺序返回这k个数均可。</p>
+<p><strong>示例</strong></p>
+<pre><code>输入： arr = [1,3,5,7,2,4,6,8], k = 4
+输出： [1,2,3,4]
+</code></pre>
+<p><strong>提示</strong></p>
+<ul>
+<li><code>0 &lt;= len(arr) &lt;= 100000</code></li>
+<li><code>0 &lt;= k &lt;= min(100000, len(arr))</code></li>
+</ul>
+<p><strong>求解</strong></p>
+<pre><code class="language-c++">class Solution {
+public:
+    vector&lt;int&gt; smallestK(vector&lt;int&gt;&amp; arr, int k) {
+        sort(arr.begin(), arr.end());
+        vector&lt;int&gt; result;
+        for(int i = 0; i &lt; k; i++)
+            result.push_back(arr[i]);
+        return result;
+    }
+};
+</code></pre>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://kelu007.github.io/tag/aTHvXPD0H/">
+            <span class="flex-auto">算法</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://kelu007.github.io/post/suan-fa-she-ji-yu-fen-xi/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  算法设计与分析
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://kelu007.github.io/post/how-to-read-papers/">
+                <h3 class="post-title">
+                  How to read papers?
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <script src="https://kelu007.github.io/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+	
+	<!-- Valine评论功能设置 -->
+	<div id="vcomments"></div>
+		<script>
+			new Valine({
+				el: '#vcomments',
+				appId: 'fP8pq4oqoA9pDV1wVhH3eSUH-gzGzoHsz',
+				appKey: 'pnUgyQ9D3tPjyNwmDfczogHu'
+			})
+		</script>
+  </body>
+</html>
+
